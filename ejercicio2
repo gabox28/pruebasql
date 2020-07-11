@@ -1,0 +1,26 @@
+--------------------------------------------------------
+--  File created - Friday-July-10-2020   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table EMPLEADO1
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."EMPLEADO1" 
+   (	"IDEMPLEADO" NUMBER(*,0), 
+	"NOMBRE" VARCHAR2(30 BYTE), 
+	"APELLIDO" VARCHAR2(30 BYTE), 
+	"DIRECCION" VARCHAR2(4000 BYTE), 
+	"TELEFONO" NUMBER(*,0), 
+	"IDDEPARTAMENTO" NUMBER(*,0)
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into SYSTEM.EMPLEADO1
+SET DEFINE OFF;
+Insert into SYSTEM.EMPLEADO1 (IDEMPLEADO,NOMBRE,APELLIDO,DIRECCION,TELEFONO,IDDEPARTAMENTO) values (1,'Pedro','Pavez','Los linces 330, San Bernardo',987894778,1);
+--------------------------------------------------------
+--  Constraints for Table EMPLEADO1
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."EMPLEADO1" MODIFY ("IDEMPLEADO" NOT NULL ENABLE);
